@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Northern Peak Construction – Premium residential and commercial construction across Canada since 1998." />
+  <title>Northern Peak Construction | Premium Canadian General Contractor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <svg class="loader-emblem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40 8 L72 26 L72 62 L40 72 L8 62 L8 26 Z" stroke="#C4703E" stroke-width="1.5" fill="none" class="loader-hex"/>
+        <text x="40" y="45" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" font-weight="600" fill="#FAFAF8" letter-spacing="1">NP</text>
+      </svg>
+      <div class="loader-bar-wrap"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" data-scroll="home" aria-label="Northern Peak Construction home">
+        <svg class="logo-hex" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 2 L34 11 L34 29 L18 34 L2 29 L2 11 Z" fill="#111111"/>
+          <text x="18" y="23" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#FAFAF8">NP</text>
+        </svg>
+        <span class="logo-wordmark">Northern Peak<em>Construction</em></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link" data-scroll="about">About</a></li>
+        <li><a href="#services" class="nav-link" data-scroll="services">Services</a></li>
+        <li><a href="#projects" class="nav-link" data-scroll="projects">Projects</a></li>
+        <li><a href="#process" class="nav-link" data-scroll="process">Process</a></li>
+        <li><a href="#testimonials" class="nav-link" data-scroll="testimonials">Testimonials</a></li>
+        <li><a href="#faq" class="nav-link" data-scroll="faq">FAQ</a></li>
+      </ul>
+
+      <a href="#contact" class="btn-cta" data-scroll="contact">Get a Quote</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </div>
+
+    <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="drawer-link" data-scroll="home">Home</a></li>
+        <li><a href="#about" class="drawer-link" data-scroll="about">About</a></li>
+        <li><a href="#services" class="drawer-link" data-scroll="services">Services</a></li>
+        <li><a href="#projects" class="drawer-link" data-scroll="projects">Projects</a></li>
+        <li><a href="#process" class="drawer-link" data-scroll="process">Process</a></li>
+        <li><a href="#testimonials" class="drawer-link" data-scroll="testimonials">Testimonials</a></li>
+        <li><a href="#faq" class="drawer-link" data-scroll="faq">FAQ</a></li>
+        <li><a href="#contact" class="drawer-link drawer-cta" data-scroll="contact">Get a Free Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=85" alt="" role="presentation" class="hero-img" loading="eager" fetchpriority="high"/>
+      <div class="hero-veil"></div>
+    </div>
+    <div class="hero-body">
+      <div class="hero-text reveal-up">
+        <span class="eyebrow">Canada's Premier General Contractor</span>
+        <h1 class="hero-heading">
+          Building Homes<br>
+          &amp; Commercial<br>
+          Spaces <em>Across Canada</em>
+        </h1>
+        <p class="hero-sub">Exceptional residential and commercial spaces built with quality craftsmanship, transparent communication, and 25 years of Canadian construction expertise.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary" data-scroll="contact">Request Free Estimate</a>
+          <a href="#projects" class="btn-ghost" data-scroll="projects">
+            <span>View Our Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-stars" aria-label="5 star rating">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span>Trusted by 500+ Canadian homeowners &amp; businesses</span>
+        </div>
+      </div>
+
+      <div class="hero-card reveal-up" style="--delay:.2s">
+        <div class="card-tag">Free Estimate</div>
+        <h3>Start Your Project</h3>
+        <p>No obligation. Receive a detailed proposal within 5–7 business days.</p>
+        <form id="hero-form" novalidate>
+          <div class="hf-group">
+            <input type="text" placeholder="Your Name" required autocomplete="name"/>
+          </div>
+          <div class="hf-group">
+            <input type="tel" placeholder="Phone Number" required autocomplete="tel"/>
+          </div>
+          <div class="hf-group">
+            <input type="email" placeholder="Email Address" required autocomplete="email"/>
+          </div>
+          <div class="hf-group">
+            <select required>
+              <option value="" disabled selected>Project Type</option>
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Renovation</option>
+              <option>Custom Home</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Request Estimate</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE / STATS TICKER ── -->
+  <div class="marquee-section" aria-label="Company highlights">
+    <div class="marquee-track" aria-hidden="true">
+      <div class="marquee-content">
+        <span class="marquee-item"><strong>25+</strong> Years in Business</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>500+</strong> Projects Completed</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>120+</strong> Commercial Builds</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>98%</strong> Client Satisfaction</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">Licensed &amp; Insured — Ontario · Alberta · BC</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">WSIB Certified Workplace Safety</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">2-Year Workmanship Warranty</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>25+</strong> Years in Business</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>500+</strong> Projects Completed</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>120+</strong> Commercial Builds</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item"><strong>98%</strong> Client Satisfaction</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">Licensed &amp; Insured — Ontario · Alberta · BC</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">WSIB Certified Workplace Safety</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">2-Year Workmanship Warranty</span>
+        <span class="marquee-sep">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col reveal-left">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Northern Peak Construction team reviewing plans on-site" loading="lazy"/>
+            <div class="about-pill">
+              <span class="pill-year">Est.</span>
+              <strong>1998</strong>
+            </div>
+          </div>
+        </div>
+        <div class="about-copy reveal-right">
+          <span class="eyebrow">Who We Are</span>
+          <h2 class="section-title">Building Trust<br><em>Since 1998</em></h2>
+          <p>Northern Peak Construction was founded on a simple belief: every client deserves a construction partner who treats their project with the same care and precision they would apply to their own home.</p>
+          <p>Over 25 years, we've grown from a small residential contractor in Toronto into one of Canada's most respected general contracting firms — with licensed architects, project managers, and master tradespeople bringing deep expertise to every phase of construction.</p>
+          <p>Hundreds of custom homes, commercial offices, and large-scale renovations across Ontario, Alberta, and British Columbia — earned through referrals, repeat clients, and five-star reviews.</p>
+          <div class="about-stats">
+            <div class="astat">
+              <strong><span class="counter" data-target="25">0</span>+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="astat">
+              <strong><span class="counter" data-target="500">0</span>+</strong>
+              <span>Projects Completed</span>
+            </div>
+            <div class="astat">
+              <strong><span class="counter" data-target="98">0</span>%</strong>
+              <span>Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST BAR ── -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item reveal-up">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div><strong>Licensed &amp; Insured</strong><span>$5M liability coverage</span></div>
+        </div>
+        <div class="trust-item reveal-up" style="--delay:.08s">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <div><strong>WSIB Certified</strong><span>Workplace safety compliant</span></div>
+        </div>
+        <div class="trust-item reveal-up" style="--delay:.16s">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <div><strong>25+ Years</strong><span>Industry experience</span></div>
+        </div>
+        <div class="trust-item reveal-up" style="--delay:.24s">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <div><strong>500+ Projects</strong><span>Delivered across Canada</span></div>
+        </div>
+        <div class="trust-item reveal-up" style="--delay:.32s">
+          <svg class="ti-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <div><strong>5-Star Rated</strong><span>Google &amp; Houzz reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" class="services section section-light">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">What We Build</span>
+        <h2 class="section-title">Comprehensive<br><em>Construction Services</em></h2>
+        <p class="section-desc">End-to-end construction solutions — from ground-up custom homes to meticulous commercial fit-outs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal-up" style="--delay:0s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+          </div>
+          <h3>Custom Homes</h3>
+          <p>Architect-designed, precision-built custom homes tailored to your vision, from foundation to final finish.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.07s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 20h20M4 20V8l8-6 8 6v12"/><path d="M10 20v-6h4v6"/><circle cx="12" cy="10" r="1"/></svg>
+          </div>
+          <h3>Home Renovations</h3>
+          <p>Thoughtful, high-quality renovations that modernize interiors and breathe new life into aging properties.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.14s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M12 12v5M9 12v3M15 12v3"/></svg>
+          </div>
+          <h3>Kitchen Remodeling</h3>
+          <p>Premium kitchen transformations — custom cabinetry, quartz countertops, and professional-grade appliance integration.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.21s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/><circle cx="17" cy="17" r="3"/><path d="m19 19-1.5-1.5"/></svg>
+          </div>
+          <h3>Bathroom Renovations</h3>
+          <p>Spa-inspired renovations with premium tile work, custom vanities, heated floors, and frameless glass enclosures.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.28s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="M2 9h20M6 4v5M18 4v5M8 14h2M14 14h2M8 17h8"/></svg>
+          </div>
+          <h3>Commercial Construction</h3>
+          <p>Large-scale commercial builds — retail plazas, medical facilities, hospitality spaces, and multi-unit developments.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.35s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/><path d="m13 14 2 2 4-4"/></svg>
+          </div>
+          <h3>Office Fit-Outs</h3>
+          <p>Modern workplace environments — open-concept offices, private suites, boardrooms, and commercial interiors.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.42s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M12 21V12"/><path d="M8 14h8"/><path d="M8 17h8"/></svg>
+          </div>
+          <h3>Home Additions</h3>
+          <p>Structurally sound, architecturally cohesive additions — second storeys, rear additions, garage conversions.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="svc-card reveal-up" style="--delay:.49s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Project Management</h3>
+          <p>Expert oversight of trades, timelines, permits, and budget — for owners who want peace of mind throughout the build.</p>
+          <a href="#contact" class="svc-link" data-scroll="contact">Inquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="section-title">Featured<br><em>Projects</em></h2>
+        <p class="section-desc">A selection of recent residential and commercial work delivered across Canada.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card proj-card--large reveal-up">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80" alt="The Whitmore Estate — custom home in Oakville, Ontario" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Custom Home</span>
+            <h3>The Whitmore Estate</h3>
+            <div class="proj-meta">
+              <span>Oakville, ON</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal-up" style="--delay:.1s">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Pinnacle Financial HQ office fit-out in Toronto" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Office Fit-Out</span>
+            <h3>Pinnacle Financial HQ</h3>
+            <div class="proj-meta">
+              <span>Toronto, ON</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal-up" style="--delay:.2s">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="Mayfair kitchen renovation in Mississauga" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Kitchen Remodel</span>
+            <h3>Mayfair Kitchen Reno</h3>
+            <div class="proj-meta">
+              <span>Mississauga, ON</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal-up" style="--delay:.1s">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80" alt="Skyline Commerce Centre commercial build in Calgary" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Commercial</span>
+            <h3>Skyline Commerce Centre</h3>
+            <div class="proj-meta">
+              <span>Calgary, AB</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card proj-card--large reveal-up" style="--delay:.2s">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80" alt="Pacific Ridge Residence custom home in Vancouver" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Custom Home</span>
+            <h3>Pacific Ridge Residence</h3>
+            <div class="proj-meta">
+              <span>Vancouver, BC</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card reveal-up" style="--delay:.3s">
+          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=700&q=80" alt="Ridgecrest Spa Suite bathroom renovation in Vaughan" loading="lazy"/>
+          <div class="proj-info">
+            <span class="proj-tag">Bathroom Reno</span>
+            <h3>Ridgecrest Spa Suite</h3>
+            <div class="proj-meta">
+              <span>Vaughan, ON</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY NORTHERN PEAK ── -->
+  <section id="why" class="why section section-light">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-intro reveal-left">
+          <span class="eyebrow">The Difference</span>
+          <h2 class="section-title">Why Clients<br><em>Choose Us</em></h2>
+          <p>We combine the professionalism of a large firm with the personal attention of a family-run business. Every client has a direct line to their project manager — not a call centre.</p>
+          <a href="#contact" class="btn-primary" data-scroll="contact" style="margin-top:2rem;display:inline-flex;">Talk to Our Team</a>
+        </div>
+        <div class="why-list">
+          <div class="why-item reveal-up" style="--delay:0s">
+            <div class="why-num">01</div>
+            <div>
+              <h3>Transparent Pricing</h3>
+              <p>Detailed, itemized quotes with no hidden fees. You know exactly where every dollar goes before we break ground.</p>
+            </div>
+          </div>
+          <div class="why-item reveal-up" style="--delay:.08s">
+            <div class="why-num">02</div>
+            <div>
+              <h3>Licensed Professionals</h3>
+              <p>Every tradesperson is fully licensed, insured, and background-checked. We never subcontract to unverified crews.</p>
+            </div>
+          </div>
+          <div class="why-item reveal-up" style="--delay:.16s">
+            <div class="why-num">03</div>
+            <div>
+              <h3>Premium Materials</h3>
+              <p>We source only from Canada's top suppliers — materials that meet or exceed building code and stand the test of time.</p>
+            </div>
+          </div>
+          <div class="why-item reveal-up" style="--delay:.24s">
+            <div class="why-num">04</div>
+            <div>
+              <h3>Dedicated Project Managers</h3>
+              <p>Your project manager is on-site daily and available by phone. You're never left wondering about your build's progress.</p>
+            </div>
+          </div>
+          <div class="why-item reveal-up" style="--delay:.32s">
+            <div class="why-num">05</div>
+            <div>
+              <h3>2-Year Warranty</h3>
+              <p>All projects include a comprehensive 2-year workmanship warranty plus manufacturer warranties on materials and systems.</p>
+            </div>
+          </div>
+          <div class="why-item reveal-up" style="--delay:.4s">
+            <div class="why-num">06</div>
+            <div>
+              <h3>94% On-Time Delivery</h3>
+              <p>One of the highest on-time completion rates in the industry. We schedule precisely and hold every subcontractor accountable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ── -->
+  <section id="process" class="process section">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">How We Work</span>
+        <h2 class="section-title">Our Construction<br><em>Process</em></h2>
+        <p class="section-desc">A clear, six-step process that keeps every project on track from the first conversation to key handover.</p>
+      </div>
+      <div class="process-steps">
+        <div class="pstep reveal-up" style="--delay:0s">
+          <div class="pstep-num">01</div>
+          <div class="pstep-body">
+            <h3>Free Consultation</h3>
+            <p>We meet to understand your goals, timeline, and budget. No pressure — honest conversation about what's possible.</p>
+          </div>
+        </div>
+        <div class="pstep reveal-up" style="--delay:.1s">
+          <div class="pstep-num">02</div>
+          <div class="pstep-body">
+            <h3>Site Assessment</h3>
+            <p>Our team conducts a thorough site inspection, gathering measurements, soil data, and existing conditions to inform planning.</p>
+          </div>
+        </div>
+        <div class="pstep reveal-up" style="--delay:.2s">
+          <div class="pstep-num">03</div>
+          <div class="pstep-body">
+            <h3>Detailed Proposal</h3>
+            <p>You receive a transparent, line-item proposal covering materials, labour, timeline, and payment milestones. No surprises.</p>
+          </div>
+        </div>
+        <div class="pstep reveal-up" style="--delay:.3s">
+          <div class="pstep-num">04</div>
+          <div class="pstep-body">
+            <h3>Planning &amp; Permits</h3>
+            <p>We coordinate all municipal permits, engineering drawings, and scheduling — taking the administrative burden off your plate.</p>
+          </div>
+        </div>
+        <div class="pstep reveal-up" style="--delay:.4s">
+          <div class="pstep-num">05</div>
+          <div class="pstep-body">
+            <h3>Construction</h3>
+            <p>Skilled crews execute with precision. Weekly progress reports, photo updates, and site meetings keep you fully informed.</p>
+          </div>
+        </div>
+        <div class="pstep reveal-up" style="--delay:.5s">
+          <div class="pstep-num">06</div>
+          <div class="pstep-body">
+            <h3>Final Walkthrough</h3>
+            <p>A comprehensive inspection with you and our quality team. We don't hand over the keys until every detail meets your approval.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS BAND ── -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal-up">
+          <strong><span class="counter" data-target="25">0</span>+</strong>
+          <span>Years in Business</span>
+        </div>
+        <div class="stat reveal-up" style="--delay:.1s">
+          <strong><span class="counter" data-target="500">0</span>+</strong>
+          <span>Completed Projects</span>
+        </div>
+        <div class="stat reveal-up" style="--delay:.2s">
+          <strong><span class="counter" data-target="120">0</span>+</strong>
+          <span>Commercial Builds</span>
+        </div>
+        <div class="stat reveal-up" style="--delay:.3s">
+          <strong><span class="counter" data-target="98">0</span>%</strong>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="testimonials" class="testimonials section section-light">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">Client Stories</span>
+        <h2 class="section-title">What Our<br><em>Clients Say</em></h2>
+      </div>
+      <div class="tslider-wrap reveal-up">
+        <div class="tslider" id="tslider">
+          <div class="tcard">
+            <div class="tcard-stars" aria-label="5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"Northern Peak built our custom home in Oakville and we couldn't be happier. Every team member was professional, communicative, and genuinely cared about the outcome. The project came in two weeks ahead of schedule and under budget. I'd recommend Northern Peak to anyone serious about building their forever home."</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">MT</div>
+              <div>
+                <strong>Michael &amp; Rachel Thornton</strong>
+                <span>Custom Home — Oakville, ON</span>
+              </div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars" aria-label="5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"We hired Northern Peak to renovate our downtown Toronto office — 6,500 sq ft of open-concept workspace, boardrooms, and reception areas. The team handled all City of Toronto permits and delivered on time despite a tight 10-week window. The finish quality is exceptional and our employees love the new space."</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">DK</div>
+              <div>
+                <strong>Diana Kowalski</strong>
+                <span>COO — Pinnacle Financial Group, Toronto</span>
+              </div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars" aria-label="5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4703E" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <blockquote>"After three failed attempts with other contractors, I was skeptical. Northern Peak changed my mind completely. Our full home addition — a second storey with three bedrooms and two bathrooms — was completed exactly as designed, exactly on schedule. The warranty process when we had a minor trim issue six months later was resolved within 48 hours."</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">SM</div>
+              <div>
+                <strong>Sanjay &amp; Priya Mehta</strong>
+                <span>Home Addition — Brampton, ON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tslider-controls">
+          <button class="tslider-btn" id="t-prev" aria-label="Previous testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="tslider-dots" id="tslider-dots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button class="tslider-btn" id="t-next" aria-label="Next testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section id="faq" class="faq section">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">Common Questions</span>
+        <h2 class="section-title">Frequently Asked<br><em>Questions</em></h2>
+      </div>
+      <div class="faq-list reveal-up">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How long does a renovation take?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Renovation timelines vary significantly by scope. A bathroom renovation typically takes 2–4 weeks; a kitchen renovation 4–8 weeks; a full home renovation 3–6 months. During your free consultation, we provide a detailed week-by-week schedule specific to your project.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Are estimates free?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Yes — completely. Our initial consultation and detailed project estimate are provided at no cost and with no obligation. We'll visit your property, assess the scope, and deliver a comprehensive written proposal within 5–7 business days.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do you offer warranties?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>All projects are backed by a 2-year workmanship warranty covering defects in labour and installation. We also pass through all manufacturer warranties on materials, fixtures, and mechanical systems — typically 5 to 25 years. New home builds in Ontario qualify for Tarion New Home Warranty.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Are you licensed and insured?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. Northern Peak holds all required provincial contractor licences across Ontario, Alberta, and British Columbia. We carry $5M in commercial general liability insurance and maintain active WSIB coverage for all employees and subcontractors. Certificates of insurance are available on request.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can you manage permits?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Yes — permit management is a core part of our service. We prepare all required drawings, submit applications to the relevant municipal authority, coordinate with inspectors, and handle revision requests. Most clients find this to be one of the most valuable aspects of working with us.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do payments work?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>We use a milestone-based payment structure: 10% on contract signing, 25% at project mobilization, then increments at agreed construction milestones, with a 10% holdback released upon your final approval. We accept e-transfer, certified cheque, and bank wire. We never ask for large upfront payments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ── -->
+  <section class="cta-section">
+    <div class="cta-media">
+      <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1600&q=80" alt="" role="presentation" loading="lazy"/>
+      <div class="cta-veil"></div>
+    </div>
+    <div class="container cta-body reveal-up">
+      <span class="eyebrow light">Start Your Project</span>
+      <h2>Ready to Build Something<br><em>Exceptional?</em></h2>
+      <p>Let's discuss your project and provide a detailed, no-obligation estimate tailored to your vision.</p>
+      <a href="#contact" class="btn-primary btn-lg" data-scroll="contact">Get Your Free Estimate</a>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact section section-light">
+    <div class="container">
+      <div class="section-intro reveal-up">
+        <span class="eyebrow">Let's Talk</span>
+        <h2 class="section-title">Request Your<br><em>Free Estimate</em></h2>
+        <p class="section-desc">Tell us about your project and a specialist will reach out within one business day.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Office</strong>
+              <span>Toronto, Ontario, Canada</span>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.44 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 6.73 6.73l1.77-1.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 16z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+16475552345">+1 (647) 555-2345</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@northernpeakconstruction.ca">info@northernpeakconstruction.ca</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Fri: 8:00 AM – 6:00 PM</span>
+              <span>Saturday: 9:00 AM – 2:00 PM</span>
+            </div>
+          </div>
+          <div class="cinfo-areas">
+            <strong>Service Areas</strong>
+            <div class="areas">
+              <span>Toronto</span><span>Mississauga</span><span>Brampton</span>
+              <span>Vaughan</span><span>Markham</span><span>Oakville</span>
+              <span>Hamilton</span><span>Ottawa</span><span>Calgary</span><span>Vancouver</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form" class="cform" novalidate>
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="firstName">First Name <abbr title="required">*</abbr></label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name"/>
+                <span class="cform-err">Required</span>
+              </div>
+              <div class="cform-group">
+                <label for="lastName">Last Name <abbr title="required">*</abbr></label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name"/>
+                <span class="cform-err">Required</span>
+              </div>
+            </div>
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="cemail">Email <abbr title="required">*</abbr></label>
+                <input type="email" id="cemail" name="email" required autocomplete="email"/>
+                <span class="cform-err">Valid email required</span>
+              </div>
+              <div class="cform-group">
+                <label for="cphone">Phone <abbr title="required">*</abbr></label>
+                <input type="tel" id="cphone" name="phone" required autocomplete="tel"/>
+                <span class="cform-err">Required</span>
+              </div>
+            </div>
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="caddress">Project Address</label>
+                <input type="text" id="caddress" name="address" autocomplete="street-address"/>
+              </div>
+              <div class="cform-group">
+                <label for="ccity">City</label>
+                <input type="text" id="ccity" name="city" autocomplete="address-level2"/>
+              </div>
+            </div>
+            <div class="cform-row">
+              <div class="cform-group">
+                <label for="cprovince">Province</label>
+                <select id="cprovince" name="province">
+                  <option value="">Select Province</option>
+                  <option>Ontario</option>
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Quebec</option>
+                  <option>Manitoba</option>
+                  <option>Saskatchewan</option>
+                  <option>Nova Scotia</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="cform-group">
+                <label for="cbudget">Estimated Budget</label>
+                <select id="cbudget" name="budget">
+                  <option value="">Select Range</option>
+                  <option>Under $50,000</option>
+                  <option>$50,000 – $150,000</option>
+                  <option>$150,000 – $500,000</option>
+                  <option>$500,000 – $1,000,000</option>
+                  <option>Over $1,000,000</option>
+                </select>
+              </div>
+            </div>
+            <div class="cform-group">
+              <label for="ctype">Project Type <abbr title="required">*</abbr></label>
+              <select id="ctype" name="projectType" required>
+                <option value="">Select Type</option>
+                <option>Custom Home</option>
+                <option>Home Renovation</option>
+                <option>Kitchen Remodeling</option>
+                <option>Bathroom Renovation</option>
+                <option>Commercial Construction</option>
+                <option>Office Fit-Out</option>
+                <option>Home Addition</option>
+                <option>Project Management</option>
+              </select>
+              <span class="cform-err">Please select a project type</span>
+            </div>
+            <div class="cform-group">
+              <label for="cdate">Preferred Start Date</label>
+              <input type="date" id="cdate" name="startDate"/>
+            </div>
+            <div class="cform-group">
+              <label for="cdesc">Project Description <abbr title="required">*</abbr></label>
+              <textarea id="cdesc" name="description" rows="5" required></textarea>
+              <span class="cform-err">Please describe your project</span>
+            </div>
+            <button type="submit" class="btn-primary btn-full btn-lg" id="csubmit">
+              <span class="btn-label">Request My Free Estimate</span>
+              <span class="btn-loading" hidden>Sending…</span>
+            </button>
+            <p class="cform-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Your information is secure and will never be shared.
+            </p>
+          </form>
+          <div class="cform-success" id="cform-success" hidden>
+            <div class="success-check">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your estimate request has been received. One of our specialists will contact you within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-hex" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 2 L34 11 L34 29 L18 34 L2 29 L2 11 Z" fill="#FAFAF8" fill-opacity=".15"/>
+              <text x="18" y="23" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#FAFAF8">NP</text>
+            </svg>
+            <span class="footer-wordmark">Northern Peak<em>Construction</em></span>
+          </div>
+          <p>Building Canada's Future With Precision. Premium residential and commercial construction across Ontario, Alberta, and British Columbia since 1998.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about" data-scroll="about">About Us</a></li>
+            <li><a href="#projects" data-scroll="projects">Projects</a></li>
+            <li><a href="#process" data-scroll="process">Our Process</a></li>
+            <li><a href="#testimonials" data-scroll="testimonials">Testimonials</a></li>
+            <li><a href="#contact" data-scroll="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services" data-scroll="services">Custom Homes</a></li>
+            <li><a href="#services" data-scroll="services">Home Renovations</a></li>
+            <li><a href="#services" data-scroll="services">Kitchen Remodeling</a></li>
+            <li><a href="#services" data-scroll="services">Bathroom Renovations</a></li>
+            <li><a href="#services" data-scroll="services">Commercial Construction</a></li>
+            <li><a href="#services" data-scroll="services">Office Fit-Outs</a></li>
+            <li><a href="#services" data-scroll="services">Home Additions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.44 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 6.73 6.73l1.77-1.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 16z"/></svg>
+              <a href="tel:+16475552345">+1 (647) 555-2345</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@northernpeakconstruction.ca">info@northernpeakconstruction.ca</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Toronto, Ontario, Canada</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Northern Peak Construction. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
