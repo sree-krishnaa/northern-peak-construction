@@ -1207,45 +1207,6 @@ const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector
 })();
 
 
-/* ==========================================
-   21. HERO FADE ON SCROLL
-========================================== */
-
-(() => {
-
-    const heroText = $(".hero-text");
-
-    const heroCard = $(".hero-card");
-
-    if (!heroText || !heroCard) return;
-
-    function update() {
-
-        const value = Math.min(
-
-            window.scrollY / 500,
-
-            1
-
-        );
-
-        heroText.style.opacity = 1 - value;
-
-        heroCard.style.opacity = 1 - value;
-
-        heroText.style.transform =
-            `translateY(${value * 40}px)`;
-
-        heroCard.style.transform =
-            `translateY(${value * 30}px)`;
-
-    }
-
-    window.addEventListener("scroll", update, {
-        passive: true
-    });
-
-})();
 
 
 /* ==========================================
